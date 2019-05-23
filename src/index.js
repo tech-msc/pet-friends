@@ -6,7 +6,6 @@ import * as serviceWorker from './serviceWorker';
 
 import {animals} from './animals';
 
-
 ReactDOM.render(
 
     <div>
@@ -29,14 +28,8 @@ ReactDOM.render(
             <Card animal={animals[8]} />
             <Card animal={animals[9]} />
         </div>
-
-
     </div>
-
-
-
     , document.getElementById('root') 
-
 );
 
 // If you want your app to work offline and load faster, you can change

@@ -6,8 +6,7 @@ export const animals = [
         name: "Madge",
         animalType : 'cachorro'
     }
-    ,
-    
+    ,    
     {
         id: 1,
         src: './contents/imgs/animals/camelo.png'  ,
