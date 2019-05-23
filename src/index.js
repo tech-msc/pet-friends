@@ -17,7 +17,7 @@ ReactDOM.render(
                     <p>jane@doe.com</p>
                 </div> */}
         </div>
-        <div>
+        <div className="flex justify-center flex-wrap" >
             <Card animal={animals[0]} />
             <Card animal={animals[1]} />
             <Card animal={animals[2]} />
@@ -31,31 +31,10 @@ ReactDOM.render(
         </div>
 
 
-
-
-        {/* <div>
-            <Card id={animals[0].id} name={ animals[0].name } src={ animals[0].src } 
-                type={ animals[0].animalType } />
-            <Card id={animals[1].id} name={ animals[1].name } src={ animals[1].src } 
-                type={ animals[1].animalType } />
-            <Card id={animals[2].id} name={ animals[2].name } src={ animals[2].src } 
-                type={ animals[2].animalType } />
-            <Card id={animals[3].id} name={ animals[3].name } src={ animals[3].src } 
-                type={ animals[3].animalType } />
-            <Card id={animals[4].id} name={ animals[4].name } src={ animals[4].src } 
-                type={ animals[4].animalType } />
-            <Card id={animals[5].id} name={ animals[5].name } src={ animals[5].src } 
-                type={ animals[5].animalType } />
-            <Card id={animals[6].id} name={ animals[6].name } src={ animals[6].src } 
-                type={ animals[6].animalType } />
-            <Card id={animals[7].id} name={ animals[7].name } src={ animals[7].src } 
-                type={ animals[7].animalType } />
-            <Card id={animals[8].id} name={ animals[8].name } src={ animals[8].src } 
-                type={ animals[8].animalType } />
-            <Card id={animals[9].id} name={ animals[9].name } src={ animals[9].src } 
-                type={ animals[9].animalType } />
-        </div> */}
     </div>
+
+
+
     , document.getElementById('root') 
 
 );
