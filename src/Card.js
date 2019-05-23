@@ -7,15 +7,17 @@ class Card extends React.Component {
         return (
             <div>
                 <img src={ require(`${imageSrc}`) }
-                    alt='animal img' className='w-10'/>
+                    alt='animal img' className='h4'/>
             </div>
         )
     }
 
     render ()
     {
-        return (                
-            <div className="bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5">
+        return (         
+                   
+            // <div className="bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5">
+            <div className="bg-light-green br3 pa3 ma2 grow bw2 shadow-5">
             
                 <div className="tc">
                     <h2>{this.props.animal.animalType}</h2>
