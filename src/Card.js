@@ -10,17 +10,17 @@ class Card extends React.Component {
         )
     }
 
-
     render ()
     {        
+        let animal = this.props.animal;
         return (    
                                
             <div className="bg-light-green br3 pa3 ma2 grow bw2 shadow-5 w5">
                 
                 <div className="tc">                    
-                <h2>{this.props.animal.animalType}</h2>
-                {this.renderImage( this.props.animal.src ) }
-
+                    <h2 className="">{animal.animalType}</h2>
+                {this.renderImage( animal.src ) }
+                    {/* <h3>{animal.name}</h3> */}
                 </div>
             </div> 
 
