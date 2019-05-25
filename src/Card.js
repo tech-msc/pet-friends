@@ -1,10 +1,12 @@
 import React from 'react';
 
+import './Card.css'
+
 class Card extends React.Component {
     
     renderImage (imageSrc) {
         return (
-            <div> 
+            <div>
                 <img src={ require(`${imageSrc}`) } alt='animal img' className='h4'/>
             </div>
         )
@@ -15,12 +17,11 @@ class Card extends React.Component {
         let animal = this.props.animal;
         return (    
                                
-            <div className="bg-light-green br3 pa3 ma2 grow bw2 shadow-5 w5">
+            <div className="br3 pa4 ma2 grow bw2 shadow-5 w5 card-images">
                 
                 <div className="tc">                    
                     <h2 className="">{animal.animalType}</h2>
-                {this.renderImage( animal.src ) }
-                    {/* <h3>{animal.name}</h3> */}
+                    {this.renderImage( animal.src ) }        
                 </div>
             </div> 
 
