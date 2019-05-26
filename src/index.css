@@ -1,3 +1,23 @@
+/* @import url('./contents/fonts/Penguin-Regular.ttf'); */
+
+/* @font-face {
+    font-family: 'penguin';
+    src: url(./contents/fonts/Penguin-Regular.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'creativezoo';
+    src: url(./contents/fonts/CreativZoo.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./contents/fonts/Montserrat.woff2);
+} */
+
 body {
     margin: 0;
     padding-left: 0;
@@ -6,4 +26,10 @@ body {
     padding-top: 1em;
     background-color:  #feff94;
 }
+
+.site-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    color:	#615e7f
     
+}
