@@ -1,18 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './contents/external_libs/tachyons.min.css';
-
-import "./index.css"
-
-import CardList from './CardList';
-
+import App from './App.js';
 import * as serviceWorker from './serviceWorker';
 
-import { animals as animalListImport } from './animals';
+// CSS imports
+import './contents/external_libs/tachyons.min.css';
+import "./index.css"
+
 
 ReactDOM.render(
-        <CardList animalList={ animalListImport} />
-                    , document.getElementById('root') 
+        <App /> , document.getElementById('root')
 
 );
 
