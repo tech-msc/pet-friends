@@ -21,7 +21,9 @@ class Card extends React.Component {
                 
                 <div className="tc">                    
                     <h2 className="">{animal.animalType}</h2>
-                    {this.renderImage( animal.src ) }        
+                    {this.renderImage( animal.src ) }
+
+                    <h2>nome: {animal.name}</h2>
                 </div>
             </div> 
 
