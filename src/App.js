@@ -1,7 +1,10 @@
 import React, { Component } from "react";
-import CardList from "./CardList";
-import Searchbox from "./Searchbox";
+import CardList from "./components/CardList/CardList";
+import Searchbox from "./components/Searchbox/Searchbox";
+import Scroll  from "./components/Scroll/Scroll";
 // import { animals as animalS } from "./animals";
+
+
 
 class App extends Component {
   constructor() {
@@ -12,7 +15,7 @@ class App extends Component {
       isLoading: false
     };
 
-    console.log("CTOR");
+    //console.log("CTOR");
   }
 
   componentDidMount() {
@@ -40,7 +43,7 @@ class App extends Component {
     }
 
     const filteredwords = this.state.animals.filter(a => {
-      console.log("FILTER");
+      //console.log("FILTER");
       return a.name
         .toLocaleLowerCase()
         .includes(this.state.searchField.toLocaleLowerCase());
@@ -56,7 +59,10 @@ class App extends Component {
         <Searchbox searchChange={this.onSearchChange} />
 
         <hr />
-        <CardList animalList={filteredwords} />
+
+        <Scroll>
+          <CardList animalList={filteredwords} />
+        </Scroll>
       </div>
     );
   }
